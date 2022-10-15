@@ -17,4 +17,7 @@ public class UserDAO {
 		
 		return sqlSession.selectList("UserDao.selectList");
 	}
+	public UserVo select(UserVo userVo){
+		return sqlSession.selectOne("UserDao.select", userVo);
+	}
 }

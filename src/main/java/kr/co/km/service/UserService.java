@@ -18,6 +18,7 @@ public class UserService {
 		
 		return userDao.selectList();
 	}
-	
-	
+	public UserVo select(UserVo userVo){
+		return userDao.select(userVo);
+	}
 }

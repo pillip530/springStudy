@@ -12,4 +12,9 @@
 		SELECT * FROM users
 	</select>
 
+	<select id="select" parameterType="hashMap" resultType="HashMap" resultMap="userVo">
+		SELECT * FROM users WHERE name = '${name}'
+	</select>
+	
+
 </mapper>
